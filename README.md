@@ -12,5 +12,5 @@
 	--Admin board
 	--Email summary to managers for approval
 
-## UI:
+## 	UI:
 	--bootstrap --> formatting
