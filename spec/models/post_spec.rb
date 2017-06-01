@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Post, type: :model do
   describe "creation" do 
   	before do
+      @post = Post.new
   		@post = Post.create(date: Date.today, rationale: "Nothing")
   	end
 
@@ -10,7 +11,7 @@ RSpec.describe Post, type: :model do
   		expect(@post).to be_valid
   	end
 
-  	it "cannot be created without a date adn rationale" do
+  	it "cannot be created without a date and rationale" do
   		@post.date = nil
   		@post.rationale = nil
   		expect(@post).to_not be_valid
