@@ -9,6 +9,6 @@
   end
 
   resources :posts
-  devise_for :users
+  devise_for :users, skip: [:registrations]
  	root to: 'static#homepage'
  end
