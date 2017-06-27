@@ -7,7 +7,7 @@ describe 'admin dashboard ' do
 	end	
 
 	it 'cannot be reached by non admin user'  do
-		user = FactoryGirl.create(:user)
+		user = FactoryGirl.create(:admin_user)
 		login_as(user, :scope => :user)
 
 		visit admin_root_path

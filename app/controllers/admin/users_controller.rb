@@ -9,6 +9,9 @@ module Admin
     #     page(params[:page]).
     #     per(10)
     # end
+    def new
+     @user = User.new
+    end
 
     # Define a custom finder by overriding the `find_resource` method:
     # def find_resource(param)
