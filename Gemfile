@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'administrate'
 gem 'bourbon'
+gem "pundit"
 
 group :development, :test do
   gem 'byebug', platform: :mri
